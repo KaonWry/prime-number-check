@@ -9,13 +9,14 @@ if (inpnum == 1) {
     process.exit();
 }
 for (let i = 1; i < inpnum; i++) {
+    //If the itteration is either 1 or the number specified,  skip the itteration
     if (i == 1) {
         continue;
     }
     else if (i == inpnum){
         continue;
     }
-    //If number can be divided, then it's not a prime number
+    //If number can be divided into whole number, then it's not a prime number
     if (inpnum % i == 0) {
         console.log(inpnum + ' is not a prime number');
         process.exit();
